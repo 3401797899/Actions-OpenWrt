@@ -13,6 +13,8 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+sed -i '238a\lsmod | grep -q mtkhnat && rmmod mtkhnat' ./feeds/luci/applications/luci-app-turboacc/root/etc/init.d/turboacc
+
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
