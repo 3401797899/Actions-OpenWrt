@@ -72,6 +72,7 @@ jobs:
       run: |
           cd openwrt && git clone https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
           git clone https://github.com/Ausaci/luci-app-nat6-helper.git package/nat6-helper
+          git clone https://github.com/3401797899/luci-app-ddns-go.git package/ddns-go
     
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
