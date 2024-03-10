@@ -73,13 +73,6 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-
-    - name: download ddns-go
-      run: |
-        wget https://github.com/jeessy2/ddns-go/releases/download/v6.2.0/ddns-go_6.2.0_linux_mipsle_hardfloat.tar.gz
-        tar -zxvf ddns-go_6.2.0_linux_mipsle_hardfloat.tar.gz
-        mv ddns-go openwrt/package/base-files/files/bin/
-        ls openwrt/package/base-files/files/bin
     
     - name: install depends
       run: |
