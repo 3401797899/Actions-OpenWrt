@@ -15,7 +15,7 @@ sed -i 's/192.168.6.1/192.168.1.1/g' package/base-files/files/bin/config_generat
 # stop mtkhnat
 echo '#!/bin/sh /etc/rc.common
 
-START=90
+START=99
 STOP=10
 
 start(){
